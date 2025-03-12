@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Nicolas Rodrigues</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">Nicolas
+            <span>Rodrigues</span>
+        </a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Início</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#education">Educação</a>
+            <a href="#experience">Experiência</a>
+            <a href="#testimonial">Testemunhos</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Olá, sou <span>Nicolas</span></h1>
+            <h3 class="text-animation">Eu sou <span></span></h3>
+            <p>
+                Sou um desenvolvedor web apaixonado por tecnologia, com experiência em JavaScript, React, Java, MySQL e
+                outras tecnologias.
+                Atualmente, curso Análise e Desenvolvimento de Sistemas no SENAC e trabalho com desenvolvimento web na
+                plataforma TOTVS Fluig.
+                Meu objetivo é criar soluções inovadoras e eficientes que agreguem valor aos negócios.
+            </p>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/nicolas-rodrigues-developer/" target="_blank"><i
+                        class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/seu-usuario" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/seu-usuario" target="_blank"><i class='bx bxl-instagram'></i></a>
+            </div>
+
+            <div class="btn-group">
+                <a href="#contact" class="btn">Contato</a>
+                <a href="NicolasRodriguesAlves.pdf" download class="btn" onclick="dowloadToast()">Baixar Currículo</a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="images/IMG_1827 (1).png" alt="Foto de Nicolas Rodrigues">
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="heading">Habilidades</h2>
+        <div class="skills-container">
+            <!-- Linguagens de Programação -->
+
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class='bx bxl-java'></i>
+                </div>
+                <h3>Java</h3>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class='bx bxl-javascript'></i>
+                </div>
+                <h3>JavaScript</h3>
+            </div>
+            
+
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class='bx bxl-html5'></i>
+                </div>
+                <h3>HTML</h3>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class='bx bxl-css3'></i>
+                </div>
+                <h3>CSS</h3>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class='bx bxl-typescript'></i>
+                </div>
+                <h3>TypeScript</h3>
+            </div>
+    
+   
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class='bx bxl-react'></i>
+                </div>
+                <h3>React</h3>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class='bx bxl-nodejs'></i>
+                </div>
+                <h3>Node.js</h3>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class='bx bxs-cog'></i>
+                </div>
+                <h3>TOTVS Fluig</h3>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class='bx bxl-bootstrap'></i>
+                </div>
+                <h3>Bootstrap</h3>
+            </div>
+            
+            
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class='bx bxl-figma'></i>
+                </div>
+                <h3>Figma</h3>
+            </div>
+
+            
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class='bx bxl-git'></i>
+                </div>
+                <h3>Git</h3>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class='bx bxs-data'></i>
+                </div>
+                <h3>MySQL</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h2 class="heading">Educação</h2>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2024</div>
+                <div class="timeline-content">
+                    <h3>Graduação em Análise e Desenvolvimento de Sistemas</h3>
+                    <p>
+                        Cursando Análise e Desenvolvimento de Sistemas no SENAC, com foco em desenvolvimento de
+                        software,
+                        banco de dados e gestão de projetos. Aprendendo tecnologias como Java, Python, React e MySQL.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2023</div>
+                <div class="timeline-content">
+                    <h3>Desenvolvedor TOTVS Fluig</h3>
+                    <p>
+                        Atuação no desenvolvimento de soluções personalizadas na plataforma TOTVS Fluig,
+                        incluindo criação de formulários, workflows e integrações com sistemas externos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2022</div>
+                <div class="timeline-content">
+                    <h3>Curso de Desenvolvimento Web</h3>
+                    <p>
+                        Conclusão de curso intensivo de desenvolvimento web, com foco em HTML, CSS, JavaScript e React.
+                        Desenvolvimento de projetos práticos para consolidar o aprendizado.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="services" id="services">
+        <h2 class="heading">Serviços</h2>
+
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Desenvolvimento Web</h4>
+                    <p>
+                        Criação de sites e aplicações web responsivas e modernas, utilizando as melhores práticas de
+                        desenvolvimento
+                        e tecnologias como HTML, CSS, JavaScript e React.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Desenvolvimento Fluig</h4>
+                    <p>
+                        Desenvolvimento de soluções personalizadas na plataforma TOTVS Fluig, incluindo formulários,
+                        workflows, integrações e automação de processos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Banco de Dados</h4>
+                    <p>
+                        Projeto e implementação de bancos de dados relacionais, com foco em MySQL.
+                        Criação de consultas, otimização de performance e integração com aplicações.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <h4>Consultoria em TI</h4>
+                    <p>
+                        Consultoria para empresas que desejam modernizar seus processos e sistemas,
+                        com foco em eficiência e redução de custos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="experience" id="experience">
+        <h2 class="heading">Experiência Profissional</h2>
+    
+        <div class="experience-container">
+            <div class="experience-item">
+                <div class="experience-info">
+                    <div class="company-info">
+                        <div class="company-logo">
+                            <img src="images/logo-mfx-technology-made-simple.png" alt="Logo da MFX Technology Made Simple" />
+                        </div>
+                        <h4>Desenvolvedor Web - MFX Technology Made Simple</h4>
+                    </div>
+                    <p class="role">São Paulo | 01/2024 - 03/2025</p>
+                    <p class="description">
+                        Atuei como desenvolvedor e consultor Fluig, contribuindo para a criação e manutenção de workflows personalizados
+                        com foco na otimização de processos empresariais. Colaborei em projetos novos e de melhoria contínua, aplicando
+                        regras de negócio para garantir a eficiência das soluções. Minhas responsabilidades incluíam a configuração de
+                        processos no Fluig, integração com sistemas externos via REST e SOAP, e desenvolvimento de interfaces
+                        intuitivas utilizando JavaScript, jQuery, HTML, CSS e Bootstrap.
+                    </p>
+                    <p class="description">
+                        Além disso, participei de reuniões com clientes para entender suas necessidades, propor soluções e alinhar
+                        expectativas, atuando como ponto de contato para dúvidas e sugestões. Essa interação constante com o cliente
+                        permitiu-me contribuir significativamente para a melhoria contínua dos processos internos e externos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <section class="testimonial" id="testimonial">
+        <div class="testimonial-box">
+            <h2 class="heading">Testemunhos</h2>
+
+            <div class="wrapper">
+                <div class="testimonial-item">
+                    <img src="images/matue.jpg" alt="Cliente 1">
+                    <h2>Matuê</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>
+                        "O Nicolas é um profissional extremamente competente e dedicado.
+                        Ele entregou um projeto complexo dentro do prazo e com excelente qualidade. Recomendo!"
+                    </p>
+                </div>
+
+                <div class="testimonial-item">
+                    <img src="images/cliente2.jpg" alt="Cliente 2">
+                    <h2>Cliente 2</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>
+                        "Trabalhar com o Nicolas foi uma experiência incrível.
+                        Ele tem um profundo conhecimento técnico e uma grande capacidade de resolver problemas."
+                    </p>
+                </div>
+
+                <div class="testimonial-item">
+                    <img src="images/cliente3.jpg" alt="Cliente 3">
+                    <h2>Cliente 3</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>
+                        "O Nicolas é um profissional excepcional.
+                        Ele não apenas entregou o projeto como esperado, mas também sugeriu melhorias que agregaram
+                        muito valor."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="contact" id="contact">
+        <h2 class="heading">Contato</h2>
+
+        <form action="">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" name="txt_name" id="txt_name" placeholder="Nome Completo" required>
+                    <input type="email" name="txt_email" id="txt_email" placeholder="Email" required>
+                </div>
+
+                <div class="input-box">
+                    <input type="number" name="nb_phone" id="nb_phone" placeholder="Telefone" required>
+                    <input type="text" placeholder="Assunto" required>
+                </div>
+
+                <div class="input-group-2">
+                    <textarea name="txt_message" id="txt_message" cols="30" rows="10" placeholder="Sua Mensagem"
+                        required></textarea>
+                    <input type="submit" name="btn" class="btn" value="Enviar Mensagem">
+                </div>
+            </div>
+        </form>
+    </section> -->
+
+    <!-- <section class="contact" id="contact">
+        <h2 class="heading">Entre em Contato</h2>
+        <div style="display: flex; justify-content: center; align-items: center;"> 
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Vamos trabalhar juntos!</h3>
+                    <p>
+                        Tem um projeto em mente ou quer trocar uma ideia? Clique no botão abaixo para copiar meu e-mail!
+                    </p>
+                    <button class="copy-email-btn" onclick="copyEmail()">
+                        <span id="email-text">Copiar E-mail</span>
+                        <i class='bx bx-copy'></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+    </section> -->
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2 class="">Vamos trabalhar juntos!</h2>
+                <p>
+                    Tem um projeto em mente ou quer trocar uma ideia? Clique no botão abaixo para copiar meu e-mail!
+                </p>
+            </div>
+            
+            
+            <div class="btn-group">
+                <button class="copy-email-btn" onclick="copyEmail()">
+                    <p id="email-text">Copiar E-mail</p>
+                    <i class='bx bx-copy'></i>
+                </button>
+               
+                <a href="NicolasRodriguesAlves.pdf" download class="btn" onclick="dowloadToast()">Baixar Currículo</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/nicolas-rodrigues-developer/" target="_blank"><i
+                    class='bx bxl-linkedin-square'></i></a>
+            <a href="https://github.com/seu-usuario" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/seu-usuario" target="_blank"><i class='bx bxl-instagram'></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#services">Serviços</a>
+            </li>
+            <li>
+                <a href="#about">Sobre Mim</a>
+            </li>
+            <li>
+                <a href="#contact">Contato</a>
+            </li>
+            <li>
+                <a href="#testimonial">Testemunhos</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            © 2024 Nicolas Rodrigues. Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <div id="toast-container"></div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

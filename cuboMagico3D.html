@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubo Mágico 3D</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .scene {
+            width: 210px;
+            height: 210px;
+            perspective: 800px;
+        }
+
+        .cube {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: rotateX(20deg) rotateY(20deg);
+            transition: transform 0.1s;
+        }
+
+        .face {
+            position: absolute;
+            width: 210px;
+            height: 210px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 2px;
+            background: black;
+        }
+
+        .square {
+            width: 68px;
+            height: 68px;
+            border-radius: 3px;
+        }
+
+        /* Definição das cores das faces */
+        .front  { transform: rotateY(  0deg) translateZ(105px); }
+        .back   { transform: rotateY(180deg) translateZ(105px); }
+        .left   { transform: rotateY(-90deg) translateZ(105px); }
+        .right  { transform: rotateY( 90deg) translateZ(105px); }
+        .top    { transform: rotateX( 90deg) translateZ(105px); }
+        .bottom { transform: rotateX(-90deg) translateZ(105px); }
+
+        /* Cores das faces do Cubo Mágico */
+        .front  .square { background: red; }
+        .back   .square { background: orange; }
+        .left   .square { background: blue; }
+        .right  .square { background: green; }
+        .top    .square { background: white; }
+        .bottom .square { background: yellow; }
+
+    </style>
+</head>
+<body>
+
+<div class="scene">
+    <div class="cube" id="cube">
+        <div class="face front">  </div>
+        <div class="face back">   </div>
+        <div class="face left">   </div>
+        <div class="face right">  </div>
+        <div class="face top">    </div>
+        <div class="face bottom"> </div>
+    </div>
+</div>
+
+<script>
+    // Gerar os quadrados internos para cada face
+    document.querySelectorAll(".face").forEach(face => {
+        for (let i = 0; i < 9; i++) {
+            const square = document.createElement("div");
+            square.classList.add("square");
+            face.appendChild(square);
+        }
+    });
+
+    const cube = document.getElementById("cube");
+    let isDragging = false;
+    let lastX, lastY;
+    let rotationX = 20, rotationY = 20;
+
+    document.addEventListener("mousedown", (e) => {
+        isDragging = true;
+        lastX = e.clientX;
+        lastY = e.clientY;
+    });
+
+    document.addEventListener("mousemove", (e) => {
+        if (!isDragging) return;
+        let deltaX = e.clientX - lastX;
+        let deltaY = e.clientY - lastY;
+        rotationY += deltaX * 0.5;
+        rotationX -= deltaY * 0.5;
+        cube.style.transform = `rotateX(${rotationX}deg) rotateY(${rotationY}deg)`;
+        lastX = e.clientX;
+        lastY = e.clientY;
+    });
+
+    document.addEventListener("mouseup", () => {
+        isDragging = false;
+    });
+</script>
+
+</body>
+</html>
