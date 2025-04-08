@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Nicolas Rodrigues</title>
+
+
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -23,7 +28,7 @@
             <a href="#skills">Habilidades</a>
             <a href="#education">Educação</a>
             <a href="#experience">Experiência</a>
-            <a href="#testimonial">Testemunhos</a>
+            <a href="#projects">Projetos</a>
             <a href="#contact">Contato</a>
         </nav>
     </header>
@@ -31,20 +36,38 @@
     <section class="home" id="home">
         <div class="home-content">
             <h1>Olá, sou <span>Nicolas</span></h1>
-            <h3 class="text-animation">Eu sou <span></span></h3>
+            <br> <!-- <h3 class="text-animation">Eu sou <span></span></h3> -->
             <p>
-                Sou um desenvolvedor web apaixonado por tecnologia, com experiência em JavaScript, React, Java, MySQL e
-                outras tecnologias.
-                Atualmente, curso Análise e Desenvolvimento de Sistemas no SENAC e trabalho com desenvolvimento web na
-                plataforma TOTVS Fluig.
-                Meu objetivo é criar soluções inovadoras e eficientes que agreguem valor aos negócios.
+                <strong style="color: var(--main-color);">Desenvolvedor Full Stack</strong> e estudante de <strong
+                    style="color: var(--main-color);">Análise e Desenvolvimento de
+                    Sistemas</strong>, com experiência na plataforma <strong style="color: var(--main-color);">Fluig da
+                    TOTVS</strong> e no
+                desenvolvimento de aplicações web.
+                Busco sempre a melhor abordagem para resolver problemas, otimizando processos e entregando soluções
+                eficientes.
+            </p>
+            <br>
+            <p>
+                Tenho domínio em:
+                <strong>JavaScript, Java, React, Node.js, MySQL, HTML, CSS, APIs (REST, SOAP) e Bootstrap.</strong>
+                Além disso, possuo experiência com <strong>UI/UX</strong>, utilizando <strong>Figma</strong> para criar
+                interfaces funcionais e intuitivas.
+            </p>
+            <br>
+            <p>
+                Já atuei na implementação de fluxos e automação de processos empresariais, garantindo mais eficiência e
+                inovação.
+                Sou proativo, focado em resultados e sempre aberto a aprender e aprimorar minhas habilidades para
+                entregar o melhor em cada projeto.
             </p>
 
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/nicolas-rodrigues-developer/" target="_blank"><i
                         class='bx bxl-linkedin-square'></i></a>
-                <a href="https://github.com/seu-usuario" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://www.instagram.com/seu-usuario" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://github.com/NicolasRAlves" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="#" onclick="copyEmail(this)" title="Copiar e-mail">
+                    <i class='bx bxl-gmail'></i>
+                </a>
             </div>
 
             <div class="btn-group">
@@ -60,99 +83,116 @@
 
     <section class="skills" id="skills">
         <h2 class="heading">Habilidades</h2>
-        <div class="skills-container">
-            <!-- Linguagens de Programação -->
 
-            <div class="skill-item">
-                <div class="skill-icon">
-                    <i class='bx bxl-java'></i>
-                </div>
-                <h3>Java</h3>
-            </div>
 
-            <div class="skill-item">
-                <div class="skill-icon">
-                    <i class='bx bxl-javascript'></i>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxl-java'></i>
+                        </div>
+                        <h3>Java</h3>
+                    </div>
                 </div>
-                <h3>JavaScript</h3>
+                <div class="swiper-slide">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxl-javascript'></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxl-html5'></i>
+                        </div>
+                        <h3>HTML</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxl-css3'></i>
+                        </div>
+                        <h3>CSS</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxl-typescript'></i>
+                        </div>
+                        <h3>TypeScript</h3>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxl-react'></i>
+                        </div>
+                        <h3>React</h3>
+                    </div>
+                </div>
             </div>
-            
+        </div>
 
-            <div class="skill-item">
-                <div class="skill-icon">
-                    <i class='bx bxl-html5'></i>
+        <div class="swiper-container inverted">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxl-nodejs'></i>
+                        </div>
+                        <h3>Node.js</h3>
+                    </div>
                 </div>
-                <h3>HTML</h3>
-            </div>
-            <div class="skill-item">
-                <div class="skill-icon">
-                    <i class='bx bxl-css3'></i>
+                <div class="swiper-slide">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxs-cog'></i>
+                        </div>
+                        <h3>TOTVS Fluig</h3>
+                    </div>
                 </div>
-                <h3>CSS</h3>
-            </div>
-
-            <div class="skill-item">
-                <div class="skill-icon">
-                    <i class='bx bxl-typescript'></i>
+                <div class="swiper-slide">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxl-bootstrap'></i>
+                        </div>
+                        <h3>Bootstrap</h3>
+                    </div>
                 </div>
-                <h3>TypeScript</h3>
-            </div>
-    
-   
-            <div class="skill-item">
-                <div class="skill-icon">
-                    <i class='bx bxl-react'></i>
+                <div class="swiper-slide">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxl-figma'></i>
+                        </div>
+                        <h3>Figma</h3>
+                    </div>
                 </div>
-                <h3>React</h3>
-            </div>
-
-            <div class="skill-item">
-                <div class="skill-icon">
-                    <i class='bx bxl-nodejs'></i>
+                <div class="swiper-slide">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxl-git'></i>
+                        </div>
+                        <h3>Git</h3>
+                    </div>
                 </div>
-                <h3>Node.js</h3>
-            </div>
-
-            <div class="skill-item">
-                <div class="skill-icon">
-                    <i class='bx bxs-cog'></i>
+                <div class="swiper-slide">
+                    <div class="skill-item">
+                        <div class="skill-icon">
+                            <i class='bx bxs-data'></i>
+                        </div>
+                        <h3>MySQL</h3>
+                    </div>
                 </div>
-                <h3>TOTVS Fluig</h3>
-            </div>
-
-            <div class="skill-item">
-                <div class="skill-icon">
-                    <i class='bx bxl-bootstrap'></i>
-                </div>
-                <h3>Bootstrap</h3>
-            </div>
-            
-            
-            <div class="skill-item">
-                <div class="skill-icon">
-                    <i class='bx bxl-figma'></i>
-                </div>
-                <h3>Figma</h3>
-            </div>
-
-            
-            <div class="skill-item">
-                <div class="skill-icon">
-                    <i class='bx bxl-git'></i>
-                </div>
-                <h3>Git</h3>
-            </div>
-
-            <div class="skill-item">
-                <div class="skill-icon">
-                    <i class='bx bxs-data'></i>
-                </div>
-                <h3>MySQL</h3>
             </div>
         </div>
     </section>
 
-    <section class="education" id="education">
+    <!-- <section class="education" id="education">
         <h2 class="heading">Educação</h2>
         <div class="timeline-items">
             <div class="timeline-item">
@@ -192,7 +232,73 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <section class="education" id="education">
+        <h2 class="heading">Educação & Certificações</h2>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Graduação em Análise e Desenvolvimento de Sistemas</h3>
+                    <p>Centro Universitário SENAC</p>
+                    <p>Cursando Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento de software, banco de
+                        dados e gestão de projetos.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Desenvolvimento de Processos - BPM/ECM Advanced</h3>
+                    <p>TOTVS</p>
+                    <p>Certificação avançada em processos de negócios e gestão de conteúdo na plataforma TOTVS.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>JavaScript do Básico ao Avançado</h3>
+                    <p>Udemy</p>
+                    <p>Curso completo de JavaScript, com 23,5 horas de conteúdo, abordando conceitos do básico ao
+                        avançado.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>FullStack Pro</h3>
+                    <p>Sujeito Programador</p>
+                    <p>Curso avançado de desenvolvimento FullStack, abordando backend e frontend com tecnologias
+                        modernas.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Full Stack</h3>
+                    <p>MFX Academy</p>
+                    <p>Curso presencial de Full Stack, abrangendo front-end, back-end e integração com bancos de dados.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Database Foundations SQL</h3>
+                    <p>Oracle</p>
+                    <p>Curso introdutório sobre banco de dados e SQL, com ênfase em fundamentos e boas práticas de
+                        manipulação de dados.</p>
+                </div>
+            </div>
+        </div>
     </section>
+
+
 
     <!-- <section class="services" id="services">
         <h2 class="heading">Serviços</h2>
@@ -243,92 +349,111 @@
 
     <section class="experience" id="experience">
         <h2 class="heading">Experiência Profissional</h2>
-    
+
         <div class="experience-container">
             <div class="experience-item">
                 <div class="experience-info">
                     <div class="company-info">
                         <div class="company-logo">
-                            <img src="images/logo-mfx-technology-made-simple.png" alt="Logo da MFX Technology Made Simple" />
+                            <img src="images/logo-mfx-technology-made-simple.png"
+                                alt="Logo da MFX Technology Made Simple" />
                         </div>
                         <h4>Desenvolvedor Web - MFX Technology Made Simple</h4>
                     </div>
                     <p class="role">São Paulo | 01/2024 - 03/2025</p>
                     <p class="description">
-                        Atuei como desenvolvedor e consultor Fluig, contribuindo para a criação e manutenção de workflows personalizados
-                        com foco na otimização de processos empresariais. Colaborei em projetos novos e de melhoria contínua, aplicando
-                        regras de negócio para garantir a eficiência das soluções. Minhas responsabilidades incluíam a configuração de
-                        processos no Fluig, integração com sistemas externos via REST e SOAP, e desenvolvimento de interfaces
+                        👨‍💻 Atuei como desenvolvedor e consultor Fluig, contribuindo para a criação e manutenção de
+                        workflows personalizados
+                        com foco na otimização de processos empresariais. Colaborei em projetos novos e de melhoria
+                        contínua, aplicando
+                        regras de negócio para garantir a eficiência das soluções. Minhas responsabilidades incluíam a
+                        configuração de
+                        processos no Fluig, integração com sistemas externos via REST e SOAP, e desenvolvimento de
+                        interfaces
                         intuitivas utilizando JavaScript, jQuery, HTML, CSS e Bootstrap.
                     </p>
                     <p class="description">
-                        Além disso, participei de reuniões com clientes para entender suas necessidades, propor soluções e alinhar
-                        expectativas, atuando como ponto de contato para dúvidas e sugestões. Essa interação constante com o cliente
-                        permitiu-me contribuir significativamente para a melhoria contínua dos processos internos e externos.
+                        Além disso, participei de reuniões com clientes para entender suas necessidades, propor soluções
+                        e alinhar
+                        expectativas, atuando como ponto de contato para dúvidas e sugestões. Essa interação constante
+                        com o cliente
+                        permitiu-me contribuir significativamente para a melhoria contínua dos processos internos e
+                        externos.
                     </p>
                 </div>
             </div>
         </div>
     </section>
-    
 
-    
-    <section class="testimonial" id="testimonial">
-        <div class="testimonial-box">
-            <h2 class="heading">Testemunhos</h2>
+    <section class="projects" id="projects">
+        <h2 class="heading">Projetos</h2>
+        <div class="projects-container">
 
-            <div class="wrapper">
-                <div class="testimonial-item">
-                    <img src="images/matue.jpg" alt="Cliente 1">
-                    <h2>Matuê</h2>
-                    <div class="rating">
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                    </div>
+
+            <div class="project-card fade-in">
+                <img src="images/projeto-presenca (2).png" alt="Projeto Inclusão de Presença" />
+                <div class="project-text">
+                    <h3>Inclusão de Presença - TOTVS Fluig</h3>
                     <p>
-                        "O Nicolas é um profissional extremamente competente e dedicado.
-                        Ele entregou um projeto complexo dentro do prazo e com excelente qualidade. Recomendo!"
-                    </p>
-                </div>
-
-                <div class="testimonial-item">
-                    <img src="images/cliente2.jpg" alt="Cliente 2">
-                    <h2>Cliente 2</h2>
-                    <div class="rating">
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                    </div>
-                    <p>
-                        "Trabalhar com o Nicolas foi uma experiência incrível.
-                        Ele tem um profundo conhecimento técnico e uma grande capacidade de resolver problemas."
-                    </p>
-                </div>
-
-                <div class="testimonial-item">
-                    <img src="images/cliente3.jpg" alt="Cliente 3">
-                    <h2>Cliente 3</h2>
-                    <div class="rating">
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                        <i class='bx bxs-star' id="star"></i>
-                    </div>
-                    <p>
-                        "O Nicolas é um profissional excepcional.
-                        Ele não apenas entregou o projeto como esperado, mas também sugeriu melhorias que agregaram
-                        muito valor."
-                    </p>
+                    Processo desenvolvido na plataforma TOTVS Fluig, destinado ao controle de solicitações de presença em aulas e laboratórios. O processo permite registrar o solicitante, turma, alunos presentes/ausentes, anexos e observações. Interface responsiva com validações, facilitando a gestão acadêmica e administrativa.<br>
+                    Tecnologias: JavaScript, jQuery, HTML, CSS, TOTVS Fluig (ECM + BPM) </p>
                 </div>
             </div>
+
+            <div class="project-card fade-in">
+                <img src="images/projeto-pagamento.png" alt="Solicitação de Pagamento" />
+                <div class="project-text">
+                    <h3>Solicitação de Pagamento - TOTVS Fluig</h3>
+                    <p>Processo criado em TOTVS Fluig para centralizar e automatizar solicitações de pagamento, com etapas de aprovação por gerência e diretoria. Inclui anexos de documentos fiscais, validação de dados financeiros e controle de rateios por centro de custo. Integração com sistemas externos como o Whinthor.<br>
+                        Tecnologias: JavaScript, jQuery, HTML, CSS, TOTVS Fluig, REST/SOAP APIs</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <img src="images/projeto-telas.png" alt="Telas de Cadastro" />
+                <div class="project-text">
+                    <h3>Telas de Cadastro Internas - TOTVS Fluig</h3>
+                    <p>Desenvolvimento de telas dentro da plataforma TOTVS Fluig para cadastro de funcionários, projetos, clientes e atividades. O diferencial está na aplicação de princípios de UX/UI, criando uma interface mais moderna, responsiva e interativa para os usuários.
+                    <br>Tecnologias: HTML, CSS, JavaScript, jQuery, TOTVS Fluig, Bootstrap</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <img src="images/projeto-itau.png" alt="API Desafio Itaú" />
+                <div class="project-text">
+                    <h3><a href="https://github.com/NicolasRAlves/springboot.desafio.itau" target="_blank">API de
+                            Transações - Desafio Itaú</a></h3>
+                    <p>API REST para registrar transações e gerar estatísticas dos últimos 60 segundos, conforme desafio proposto pelo Itaú. Os dados são armazenados em memória, garantindo alta performance e simplicidade.
+                      <br>  Tecnologias: Java, Spring Boot, Maven, JUnit, Insominia</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <img src="images/javafarm.png" alt="JavaFarm" />
+                <div class="project-text">
+                    <h3><a href="https://github.com/NicolasRAlves/javafarm" target="_blank">JavaFarm - Simulador de
+                            Fazenda</a></h3>
+                    <p>Jogo educativo que simula o cultivo e a colheita de alimentos, com sistema de armazenamento no celeiro. Projeto voltado para o aprendizado de orientação a objetos, com aplicação de herança e polimorfismo.
+                      <br>  Tecnologias: Java (POO), JavaFX, IntelliJ, Terminal</p>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <img src="images/projeto-store.jpeg" alt="Spring Boot Store" />
+                <div class="project-text">
+                    <h3><a href="https://github.com/NicolasRAlves/springboot.store" target="_blank">Montagem de
+                            Computador - Spring Boot</a></h3>
+                    <p>Sistema de montagem de PCs que permite ao usuário montar uma máquina personalizada verificando compatibilidade entre os componentes. Desenvolvido como desafio acadêmico.
+                       <br> Tecnologias: Java, Spring Boot, Thymeleaf, HTML, CSS, Bootstrap</p>
+                </div>
+            </div>
+
         </div>
     </section>
+
+
+
+
 
     <!-- <section class="contact" id="contact">
         <h2 class="heading">Contato</h2>
@@ -373,7 +498,7 @@
         
     </section> -->
 
-    <section class="contact" id="contact">
+    <!-- <section class="contact" id="contact">
         <div class="contact-container">
             <div class="contact-info">
                 <h2 class="">Vamos trabalhar juntos!</h2>
@@ -381,52 +506,83 @@
                     Tem um projeto em mente ou quer trocar uma ideia? Clique no botão abaixo para copiar meu e-mail!
                 </p>
             </div>
-            
-            
+
+
             <div class="btn-group">
                 <button class="copy-email-btn" onclick="copyEmail()">
                     <p id="email-text">Copiar E-mail</p>
                     <i class='bx bx-copy'></i>
                 </button>
-               
+
                 <a href="NicolasRodriguesAlves.pdf" download class="btn" onclick="dowloadToast()">Baixar Currículo</a>
             </div>
         </div>
+    </section> -->
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Vamos trabalhar juntos!</h2>
+                <p>Tem um projeto em mente ou quer trocar uma ideia? Me envie uma mensagem!</p>
+            </div>
+
+            <form id="contact-form" class="contact-form" action="https://formspree.io/f/xvgkvvoe" method="POST">
+                <label>
+                    E-mail:
+                    <input type="email" name="email" required style="height: 45px;">
+                </label>
+                <label>
+                    Mensagem:
+                    <textarea name="message" rows="6" required></textarea>
+                </label>
+                <button type="submit" class="btn">Enviar</button>
+                <p id="form-success-message" class="form-success">Mensagem enviada com sucesso! ✅</p>
+            </form>
+        </div>
     </section>
+
+
 
     <footer class="footer">
         <div class="social">
             <a href="https://www.linkedin.com/in/nicolas-rodrigues-developer/" target="_blank"><i
                     class='bx bxl-linkedin-square'></i></a>
-            <a href="https://github.com/seu-usuario" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://www.instagram.com/seu-usuario" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://github.com/NicolasRAlves" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="#" onclick="copyEmail(this)" title="Copiar e-mail">
+                <i class='bx bxl-gmail'></i>
+            </a>
         </div>
 
         <ul class="list">
+
             <li>
-                <a href="#">FAQ</a>
+                <a href="#experience">Experiência</a>
             </li>
             <li>
-                <a href="#services">Serviços</a>
-            </li>
-            <li>
-                <a href="#about">Sobre Mim</a>
+                <a href="#">Sobre Mim</a>
             </li>
             <li>
                 <a href="#contact">Contato</a>
             </li>
-            <li>
-                <a href="#testimonial">Testemunhos</a>
-            </li>
+
         </ul>
         <p class="copyright">
-            © 2024 Nicolas Rodrigues. Todos os direitos reservados.
+            © 2025 Nicolas Rodrigues. Todos os direitos reservados.
         </p>
     </footer>
 
     <div id="toast-container"></div>
 
+    <button id="backToTop" class="back-to-top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </button>
+
+
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
